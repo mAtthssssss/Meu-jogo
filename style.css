@@ -1,0 +1,60 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Área de jogo */
+#play-area {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    border-radius: 10px;
+    overflow: hidden; /* Impede que elementos saiam da área */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Letra */
+#letter {
+    position: absolute;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff5733;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Animação suave ao movimento */
+}
+
+/* Imagem de vitória */
+#success-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupará toda a largura do retângulo */
+    height: 100%; /* Ocupará toda a altura do retângulo */
+    border-radius: 10px; /* Mesmo arredondamento do retângulo */
+    object-fit: cover; /* Ajusta a imagem para caber no retângulo sem distorcer */
+    z-index: 1000; /* Para garantir que esteja acima de tudo */
+}
+
